@@ -103,7 +103,6 @@ function App() {
 
   return (
     <main className="bg-[url(/bg.svg)] min-h-screen">
-      
       <div className="font-sans max-w-[1080px] m-auto p-3 flex flex-col gap-9 justify-center">
         <Modal
           isShowForm={isShowForm}

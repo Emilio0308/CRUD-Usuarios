@@ -9,11 +9,11 @@ const User = ( { user , deleteUser , setUserIdToEdit , reset , setisShowForm }) 
     }
   return (
     <article className='bg-gray-400 grid grid-rows-[1fr_40px] px-3 py-3 max-w-[340px] w-full gap-5'>
-        <article className='flex flex-col gap-3'>
+        <article className='flex flex-col '>
             <div className='flex justify-center items-center my-2 shadow-lg shadow-slate-500 w-full'>
                 <img className='w-full object-cover' src={user.image_url? user.image_url : "/userpng.png"} alt= "imagen del usuario" />
             </div>
-            <h3 className='font-bold'>{user?.first_name} {user?.last_name}</h3>
+            <h3 className='font-bold h-[50px] leading-[25px]'>{user?.first_name} {user?.last_name}</h3>
             <ul>
                 <span className='text-gray-600'>Email: </span>
                 <li>{user.email}</li>
