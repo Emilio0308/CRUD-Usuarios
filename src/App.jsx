@@ -105,7 +105,7 @@ function App() {
   return (
     <>
       <Hero/>
-      <main className="bg-[url(/bg.svg)] min-h-screen bg-fixed pt-5">
+      <main className="bg-[url(/bg.svg)] bg-cover bg-no-repeat min-h-screen bg-fixed pt-5">
       <div className="font-sans max-w-[1080px] m-auto p-3 flex flex-col gap-9 justify-center">
         <Modal
           isShowForm={isShowForm}
