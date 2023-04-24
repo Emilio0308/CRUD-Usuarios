@@ -1,0 +1,15 @@
+.orb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: #5c6ac4;
+    background-image: radial-gradient(circle at center, #5c6ac4, #202e78);
+    filter: saturate(200%) brightness(150%);
+    mix-blend-mode: color-burn;
+    top: 5%;
+    left: 52%;
+    box-shadow:  -25px 30px 20px 20px #5c6ac4 , -45px 50px 20px 20px #5c6ac4d5;
+  }

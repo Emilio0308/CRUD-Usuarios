@@ -15,8 +15,8 @@ const Modal = ( { isShowForm , setisShowForm , handleSubmit , Submit, register, 
       }
   return (
     <section className={
-        `fixed top-0 left-0 bottom-0 right-0 bg-black/40 flex justify-center items-center transition-opacity ${isShowForm? " opacity-100 visible" : "opacity-0 invisible" }`}>
-        <form onSubmit={handleSubmit(Submit)} className='bg-white p-4 grid gap-4 w-[350px] relative'>
+        `z-20 fixed top-0 left-0 bottom-0 right-0 bg-black/40 flex justify-center items-center transition-opacity ${isShowForm? " opacity-100 visible" : "opacity-0 invisible" }`}>
+        <form onSubmit={handleSubmit(Submit)} className='bg-white p-4 grid gap-4 w-[350px] max-h-[600px] relative overflow-y-auto'>
             <h3 className='text-2xl font-bold border-b-4 border-indigo-900 p-2'>{userIdToEdit? "Editar": "Nuevo"} Usuario</h3>
             <div className="grid gap-1">
                 <label className="text-sm font-semibold" htmlFor="first_name">Nombre
@@ -102,7 +102,7 @@ const Modal = ( { isShowForm , setisShowForm , handleSubmit , Submit, register, 
                 className="outline-none border-[1px] rounded-sm bg-gray-100 p-1" id='image_url' type="text" />
                 <span className='text-red-500'>{errors.image_url &&  errors.image_url.message }</span>
             </div>
-            <i onClick={handleClick} className='bx bx-x absolute right-1 top-1 cursor-pointer'></i>
+            <i onClick={handleClick} className='bx bx-x absolute right-1 top-1 cursor-pointer text-2xl'></i>
             <button className='bg-purle-p text-white p-2 hover:bg-indigo-900 transition-colors text-sm'>
                 {
                     userIdToEdit? "Guardar Cambios": "Agregar Nuevo Usuario"

@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import { useForm } from "react-hook-form";
 import User from "./components/User";
 import FilterSection from "./components/FilterSection";
+import Hero from "./components/Hero";
 
 const BASE_URL = "https://users-crud.academlo.tech";
 
@@ -102,7 +103,9 @@ function App() {
   }, []);
 
   return (
-    <main className="bg-[url(/bg.svg)] min-h-screen">
+    <>
+      <Hero/>
+      <main className="bg-[url(/bg.svg)] min-h-screen bg-fixed pt-5">
       <div className="font-sans max-w-[1080px] m-auto p-3 flex flex-col gap-9 justify-center">
         <Modal
           isShowForm={isShowForm}
@@ -132,6 +135,7 @@ function App() {
         </section>
       </div>
     </main>
+    </>
   );
 }
 

@@ -22,8 +22,8 @@ const User = ( { user , deleteUser , setUserIdToEdit , reset , setisShowForm }) 
             </ul>
         </article>
         <div className='grid grid-cols-2 gap-3'>
-            <button className='bg-[#BDBDBD] hover:bg-zinc-200 text-xl p-2 ' onClick={handleEdit}><i className='bx bx-edit-alt'></i></button>
-            <button className='bg-red-400 hover:bg-red-600 text-xl p-2 ' onClick={()=> deleteUser(user.id)}><i className='bx bx-trash'></i></button>
+            <button className='bg-[#BDBDBD] hover:bg-zinc-200 text-xl p-2 mix-blend-color-burn' onClick={handleEdit}><i className='bx bx-edit-alt'></i></button>
+            <button className='bg-red-400 hover:bg-red-600 text-xl p-2 mix-blend-color-burn' onClick={()=> deleteUser(user.id)}><i className='bx bx-trash'></i></button>
         </div>
     </article>
   )
