@@ -5,7 +5,7 @@ const Hero = () => {
 
 
   return (
-    <section className='w-[100%] min-h-screen grid grid-rows-2 sm:grid-cols-2 sm:grid-rows-[0] bg-black bg-[url(/heroImage.jpeg)]  bg-center bg-cover bg-no-repeat bg-fixed'>
+    <section className='w-[100%] h-screen grid grid-rows-2 sm:grid-cols-2 sm:grid-rows-[0] bg-black bg-[url(/heroImage.jpeg)]  bg-center bg-cover bg-no-repeat bg-fixed'>
         <div className='w-[100%] row-start-1 row-end-2 relative overflow-hidden sm:min-h-screen'>
             <img className='object-cover w-[100%] h-[100%] saturate-50 ' src="/heroImage.jpeg" alt="" />
             <div className='orb absolute'></div>
